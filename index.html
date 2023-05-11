@@ -135,10 +135,10 @@
                             class="slider">
                         <img src="./assets/sayur4.jpg" style=" border-radius: 10px; margin-left: 15px;" alt="sayur4"
                             class="slider">
-                        <!-- <div style="padding-left: 14cm; padding-bottom: 10px;">
-                            <button onclick="plusDivs(-1)" class="button" id="button1">Previus</button>
-                            <button onclick="plusDivs(1)" class="button" id="button2">Next</button>
-                        </div> -->
+                        <div style="padding-left: 14cm; padding-bottom: 10px;">
+                            <!-- <button onclick="plusDivs(-1)" class="button" id="button1">Previus</button>
+                            <button onclick="plusDivs(1)" class="button" id="button2">Next</button> -->
+                        </div>
                         <div
                             style="text-align: center; padding-bottom: 20px; font-size: 25px; font-weight: bold; color: grey; padding-top: 20px;">
                             "setiap
@@ -359,10 +359,23 @@
         }
 
         imgslide[slides - 1].style.display = 'block';
+    }
 
-        setInterval(() => {
-            plusDivs(1);
-        }, 2000);
+    setInterval(() => {
+        plusDivs(1);
+    }, 3000);
+
+    function validationForm() {
+        var name = document.forms["send-form"]["flname"].val();
+        var email = document.forms["send-form"]["email"].val();
+        var pilih = document.forms["send-form"]["pilih"].val();
+        if (name == "") {
+            alert("Kosong");
+            return false;
+        }
+        document.getElementById("flname").innerText = name;
+        document.getElementById("email").innerText = email;
+        document.getElementById("pilih").innerText = pilih;
     }
 
 </script>
