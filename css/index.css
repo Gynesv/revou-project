@@ -1,11 +1,16 @@
 .body {
     display: flex;
     flex-direction: column;
-    padding: 3cm;
+    /* padding: 3cm; */
 }
 
 .margin {
     border: 2px solid rgb(223, 220, 220);
+}
+
+.margin1 {
+    border: 2px solid rgb(223, 220, 220);
+    margin-top: 10px;
 }
 
 .header {
@@ -37,7 +42,12 @@
 }
 
 .logo {
-    width: 30%;
+    width: 20%;
+}
+
+.logo1 {
+    width: 20%;
+    margin-left: 550px;
 }
 
 .h1 {
@@ -97,11 +107,11 @@
 }
 
 .kiri {
-    background: rgba(64, 63, 65, 0.507);
+    background: rgba(222, 221, 226, 0.507);
     width: 30%;
     border-radius: 5px;
     margin-bottom: 700px;
-    padding-right: 30px;
+    padding-right: 3em;
     /* padding-top: 3em; */
     /* padding-left: 2em; */
 }
@@ -121,17 +131,18 @@
     width: 30%;
     border-radius: 5px;
     margin-bottom: 700px;
-    /* padding-top: 3em; */
+    padding-right: 3em;
     /* padding-left: 2em; */
 }
 
-.col {
+/* .col {
+    /* padding: 1cm; */
+/* display: flex; */
+/* } */
+
+*/ .col1 {
     padding: 1cm;
     display: flex;
-}
-
-.col1 {
-    padding: 0cm;
 }
 
 .col2 {
@@ -168,12 +179,23 @@
     border-width: 3px;
 }
 
+.bor1 {
+    width: 100px;
+    display: flex;
+    margin-left: 600px;
+    border-bottom: 4px solid rgb(97, 96, 96);
+    border-width: 3px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
 .circle {
     float: left;
-    width: 40px;
+    width: 20px;
     height: 20px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     border-radius: 100px;
     background: rgb(228, 220, 220);
     text-align: center;
@@ -188,12 +210,12 @@
     display: flex;
     width: 30px;
     height: 30px;
-    margin-left: 15px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 25px;
     border-radius: 100px;
     background: grey;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     padding: 0.5em;
 }
 
@@ -209,7 +231,6 @@
 }
 
 .jarak {
-    /* padding-bottom: 30px; */
     display: flex;
     float: left;
 }
@@ -237,8 +258,11 @@
 }
 
 .border2 {
+    /* display: flex; */
+    /* width: 100%; */
     background: rgba(216, 222, 238, 0.699);
     padding: 50px;
+    /* margin-top: 3cm; */
     text-align: center;
     font-size: 50px;
     font-family: 'Lucida Sans Regular';
@@ -265,4 +289,38 @@
 .link-d {
     text-decoration: none;
     color: black;
+}
+
+.img1 {
+
+    float: left;
+    margin-left: 600px;
+    padding-right: 5px;
+}
+
+#button1 {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: red;
+}
+
+#button2 {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: green;
+}
+
+.slider {
+    width: 750px;
+    height: 400px;
 }

@@ -23,8 +23,17 @@
                 margin-bottom: 10px;
             }
 
+            .logo1 {
+                margin-left: 250px;
+            }
+
             .col {
                 flex-direction: column;
+            }
+
+            .col1 {
+                flex-direction: column;
+                /* margin-top: 10cm; */
             }
 
             .our {
@@ -32,11 +41,21 @@
                 width: 100%;
             }
 
+            .our1 {
+                /* flex-direction: column; */
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
             .jarak {
                 flex-direction: column;
             }
 
             .element-left {
+                width: 100%;
+            }
+
+            .elemnt-right {
                 width: 100%;
             }
 
@@ -49,6 +68,37 @@
                 flex-direction: column;
                 margin-left: 130px;
             }
+
+            .bor1 {
+                flex-direction: column;
+                margin-left: 240px;
+                margin-top: 20px;
+            }
+
+            .border2 {
+                flex-direction: column;
+                margin-top: 15cm;
+            }
+
+            .circle1 {
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            .col2 {
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+
+            .img1 {
+                margin-left: 220px;
+            }
+
+            .slider {
+                width: 550px;
+            }
+
+
 
 
 
@@ -77,14 +127,24 @@
             <div class="our">
                 <div class="element-left">
                     <div>
-                        <img src="./assets/sayur.jpg" width="90%" height="20%"
-                            style=" border-radius: 10px; padding-bottom: 0.5cm; margin-left: 15px;">
-
-                        <div style="text-align: center; padding-bottom: 20px; font-weight: bold; color: grey;">"setiap
-                            hari beli
-                            sayur buah yang fresh
-                            disini"</div>
+                        <img src="./assets/sayur1.jpg" style=" border-radius: 10px;  margin-left: 15px;" alt="sayur1"
+                            class="slider">
+                        <img src="./assets/sayur2.jpg" style=" border-radius: 10px; margin-left: 15px;" alt="sayur2"
+                            class="slider">
+                        <img src="./assets/sayur3.jpg" style=" border-radius: 10px; margin-left: 15px;" alt="sayur3"
+                            class="slider">
+                        <img src="./assets/sayur4.jpg" style=" border-radius: 10px; margin-left: 15px;" alt="sayur4"
+                            class="slider">
+                        <!-- <div style="padding-left: 14cm; padding-bottom: 10px;">
+                            <button onclick="plusDivs(-1)" class="button" id="button1">Previus</button>
+                            <button onclick="plusDivs(1)" class="button" id="button2">Next</button>
+                        </div> -->
+                        <div
+                            style="text-align: center; padding-bottom: 20px; font-size: 25px; font-weight: bold; color: grey; padding-top: 20px;">
+                            "setiap
+                            hari beli sayur buah yang fresh disini"</div>
                     </div>
+
                     <div>
                         <img class="gambar" src="./assets/user.png">
                         <div
@@ -168,121 +228,132 @@
                 </div>
             </div>
         </main>
-        <!-- 
-        <main class="col1" id="our">
-            <div class="border2">
-                <div>Our Package</div>
-            </div>
-        </main> -->
 
+        <div class="border2" id="our">
+            <div>Our Package</div>
+        </div>
 
-        <!-- <main class="col">
-            <div class="our1">
-                <div class="kiri">
-                    <div class="jarak">
-                        <div class="circle1"><img src="./assets/light.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Fresh Vegetable</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 19px; font-family: Arial;">Sayuran segar
-                            langsung dari sumber pertanian terbaik</div>
-                    </div>
-                </div>
-
-                <div class="tengah">
-                    <div class="jarak1">
-                        <div class="circle1"><img src="./assets/light.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Fresh Fruit</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
-                            Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</div>
-                    </div>
-                </div>
-
-
-                <div class="kanan">
-                    <div class="jarak1">
-                        <div class="circle1"><img src="./assets/light.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Instan Delivery</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
-                            Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi
-                            belanja
-                            kamu</div>
-                    </div>
-                </div>
+        <!-- <main class="col"> -->
+        <div class="our1">
+            <div class="kiri">
+                <div class="circle1"><img src="./assets/light.png"></div>
+                <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                    Fresh Vegetable</div>
+                <div style="color: rgb(114, 113, 113); font-size: 19px; font-family: Arial;">Sayuran segar
+                    langsung dari sumber pertanian terbaik</div>
             </div>
 
-            <div style="border-bottom: 3px solid rgb(173, 172, 172); margin-left: 420px; margin-right: 420px;"></div>
+            <div class="tengah">
+                <div class="circle1"><img src="./assets/light.png"></div>
+                <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                    Fresh Fruit</div>
+                <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
+                    Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</div>
+            </div>
 
-            <div class="our1">
-                <div class="kiri">
-                    <div class="jarak1">
-                        <div class="circle1"><img src="./assets/bintang.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Kitchen Ingredient</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 19px; font-family: Arial;">Bumbu dapur lengkap
-                            untuk keperluan memasak kamu</div>
-                    </div>
-                </div>
 
-                <div class="tengah">
-                    <div class="jarak1">
-                        <div class="circle1"><img src="./assets/bintang.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Kitchen Set</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
-                            Segala jenis alat masak untuk kamu memasak</div>
-                    </div>
-                </div>
+            <div class="kanan">
+                <div class="circle1"><img src="./assets/light.png"></div>
+                <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                    Instan Delivery</div>
+                <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
+                    Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi
+                    belanja
+                    kamu</div>
+            </div>
+        </div>
 
-                <div class="kanan">
-                    <div class="jarak1">
-                        <div class="circle1"><img src="./assets/bintang.png"></div>
-                        <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
-                            Bunding Set</div>
-                        <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
-                            Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</div>
-                    </div>
+        <div class="bor1"></div>
+        <!-- <div class="bor" style="border-bottom: 3px solid rgb(173, 172, 172); margin-left: 420px; margin-right: 420px;"></div> -->
+
+        <div class="our1">
+            <div class="kiri">
+                <div class="jarak1">
+                    <div class="circle1"><img src="./assets/bintang.png"></div>
+                    <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                        Kitchen Ingredient</div>
+                    <div style="color: rgb(114, 113, 113); font-size: 19px; font-family: Arial;">Bumbu dapur lengkap
+                        untuk keperluan memasak kamu</div>
                 </div>
             </div>
+
+            <div class="tengah">
+                <div class="jarak1">
+                    <div class="circle1"><img src="./assets/bintang.png"></div>
+                    <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                        Kitchen Set</div>
+                    <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
+                        Segala jenis alat masak untuk kamu memasak</div>
+                </div>
+            </div>
+
+            <div class="kanan">
+                <div class="jarak1">
+                    <div class="circle1"><img src="./assets/bintang.png"></div>
+                    <div style="color: rgb(73, 73, 73); font-size: 30px; font-weight: bold; font-family: Arial;">
+                        Bunding Set</div>
+                    <div style="color: rgb(114, 113, 113); font-size: 15px; font-size: 19px; font-family: Arial;">
+                        Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border3"></div>
+
+        <div>
+            <h1 class="h1">Your Closing Argument Headline</h1>
+            <h3 class="h3">Suspendisse egestas rhoncus urna in bibendum. donec urna neque, euismod, sed justo quis,
+                convalis tincidunt risus.
+                Phasellus fringilla odio vel erat fringilla
+            </h3>
+        </div>
+
+        <div class="col2">
+            CALL TO ACTION
+        </div>
         </main>
 
         <main class="col1" id="call">
             <div class="border3">
             </div>
-        </main>
-        <main class="col">
-            <div>
-                <h1 class="h1">Your Closing Argument Headline</h1>
-                <h3 class="h3">Suspendisse egestas rhoncus urna in bibendum. donec urna neque, euismod, sed justo quis,
-                    convalis tincidunt risus.
-                    Phasellus fringilla odio vel erat fringilla
-                </h3>
-            </div>
-
-            <div class="col2">
-                CALL TO ACTION
-            </div>
-        </main>
-
-        <main class="col1" id="call">
-            <div class="border3">
-            </div>
-        </main>
-        <main class="col">
-            <div>
-                <h1 class="h1">Moqups</h1>
-                <h3 class="h3"> <label style="padding-right: 30px;">Terms of Service</label><label for="">Privacy
-                        Policy</label></h3>
-                <h3><img src="./assets/copyright.png" width="25px"
-                        style="float: left; margin-left: 450px; padding-right: 5px;">
-                    <label style="color: grey; padding-right: 20px;">2019</label> <label
-                        style="color: grey;">Moqups</label>
-                </h3>
-            </div>>
-        </main> -->
+            <main class="col">
+                <div>
+                    <img src="./assets/moqups-logo.png" alt="moqups-logo" class="logo1">
+                    <h3 class="h3"> <label style="padding-right: 30px;">Terms of Service</label><label for="">Privacy
+                            Policy</label></h3>
+                    <h3><img class="img1" src="./assets/copyright.png" width="25px">
+                        <label style="color: grey; padding-right: 20px;">2019</label> <label
+                            style="color: grey;">Moqups</label>
+                    </h3>
+                </div>
+            </main>
 
     </div>
 </body>
 
 </html>
+
+<script>
+    var slides = 1;
+    showDivs(slides);
+    function plusDivs(n) {
+        showDivs((slides += n));
+    }
+
+    function showDivs(n) {
+        var i;
+        var imgslide = document.getElementsByClassName("slider");
+        if (n > imgslide.length) slides = 1;
+        else if (n < 1) slides = imgslide.length;
+
+        for (i = 0; i < imgslide.length; i++) {
+            imgslide[i].style.display = "none";
+        }
+
+        imgslide[slides - 1].style.display = 'block';
+    }
+
+    setInterval(() => {
+        plusDivs(1);
+    }, 2000)
+</script>
