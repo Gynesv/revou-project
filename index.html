@@ -195,33 +195,41 @@
                             style="font-size: 15px; font-family: Arial; color: rgb(80, 79, 79);">
                             Sales akan menghubungi anda 1x24 jam setelah data kami terima</label>
                     </div>
-                    <form action="index.html">
+
+                    <form name="send-form" onsubmit="return validationForm()">
+
                         <div style=" padding-top: 2em;">
-                            <div class="form">
+                            <div class="form1">
                                 <label
                                     style="font-size: 15px; font-family: Arial; color: rgb(80, 79, 79); font-weight: bold; padding-bottom: 10px;">
                                     Your Name:</label>
-                                <input type="text" class="border" placeholder="First and last name">
+                                <input type="text" class="border" placeholder="First and last name" id="flname"
+                                    name="flname">
                             </div>
 
-                            <div class="form">
+                            <div class="form1">
                                 <label
                                     style="font-size: 15px; font-family: Arial; color: rgb(80, 79, 79); font-weight: bold; padding-bottom: 10px;">
                                     Email Address:</label>
-                                <input type="text" class="border" placeholder="example@email.com">
+                                <input type="text" class="border" placeholder="example@email.com" id="email"
+                                    name="email">
                             </div>
 
-                            <div class="form">
+                            <div class="form1">
                                 <label
                                     style="font-size: 15px; font-family: Arial; color: rgb(80, 79, 79); font-weight: bold; padding-bottom: 10px;">
                                     Waht are you interested in?</label>
-                                <select name="" id="" class="border1">
+                                <select name="pilih" id="pilih" class="border1">
                                     <option value="">Select option</option>
+                                    <option value="select one">Select One</option>
+                                    <option value="select two">Select Two</option>
+                                    <option value="select three">Select Three</option>
                                 </select>
                             </div>
 
-                            <div class="form">
-                                <button class="but">SEND</button>
+                            <div class="form1">
+                                <!-- <button class="but" id="send">SEND</button> -->
+                                <input type="submit" value="SEND" class="but">
                             </div>
                         </div>
                     </form>
@@ -327,7 +335,7 @@
                     </h3>
                 </div>
             </main>
-
+        </main>
     </div>
 </body>
 
@@ -351,9 +359,10 @@
         }
 
         imgslide[slides - 1].style.display = 'block';
+
+        setInterval(() => {
+            plusDivs(1);
+        }, 2000);
     }
 
-    setInterval(() => {
-        plusDivs(1);
-    }, 2000)
 </script>
